@@ -44,3 +44,5 @@
         # gen_scores: the output of calling generate_scores(song_ratings)
         # ID: the ID number of the user to make recommendations for.
   ```
+  
+  The ouput will be a list of tuples, with the song title and artist and the predicted rating. (song-artist, prediction).
