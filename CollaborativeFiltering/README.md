@@ -19,19 +19,19 @@ Cleaning Data:
 
   You also may want to specify a minimum threshold of ratings on a given song,
   below which the song is deemed too unknown for it to be meaningfully included in the data.
-  This is done by calling `remove_losers(song_ratings, threshold)`:
+  This is done by calling `remove_losers(song_ratings, threshold):
   
-    `# song_ratings:` list of lists of song ratings
+      # song_ratings: list of lists of song ratings
     
-    `# threshold:` [0-1] percentage of users that must not know a song for it to be removed
+      # threshold: [0-1] percentage of users that must not know a song for it to be removed`
 
 Running:
   Once the data (song_ratings) is defined (list of lists of [1-5] ratings), we can generate the model's predictions
   for every user-song datapoint (including those songs which have already been rated by that user) by assigning:
   
-    `gen_scores = generate_scores(song_ratings)`
+    `gen_scores = generate_scores(song_ratings)
     
-      # `song_ratings:` the list of lists of song ratings
+      # song_ratings: the list of lists of song ratings`
 
   To produce recommendations for a given user, simply call:
     `recommendations(song_ratings, gen_scores, ID)`
