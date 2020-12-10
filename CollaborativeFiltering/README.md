@@ -23,9 +23,9 @@ Cleaning Data:
   ```
         remove_losers(song_ratings, threshold):
   
-      # song_ratings: list of lists of song ratings
+           # song_ratings: list of lists of song ratings
     
-      # threshold: [0-1] percentage of users that must not know a song for it to be removed
+           # threshold: [0-1] percentage of users that must not know a song for it to be removed
   ```
 
 Running:
@@ -34,13 +34,13 @@ Running:
   ```
       gen_scores = generate_scores(song_ratings)
     
-      # song_ratings: the list of lists of song ratings`
+         # song_ratings: the list of lists of song ratings`
   ```
 
   To produce recommendations for a given user, simply call:
   ```
      recommendations(song_ratings, gen_scores, ID)
-      # song_ratings: the list of lists of song ratings,
-      # gen_scores: the output of calling generate_scores(song_ratings)
-      # ID: the ID number of the user to make recommendations for.
+        # song_ratings: the list of lists of song ratings,
+        # gen_scores: the output of calling generate_scores(song_ratings)
+        # ID: the ID number of the user to make recommendations for.
   ```
