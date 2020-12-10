@@ -1,4 +1,4 @@
-Data Collection:
+**Data Collection:**
   Data must either be assembled as a list of lists of song ratings such that each list represents
   that user's ratings of each song, in order, comma delimited.
                                     OR
@@ -9,7 +9,7 @@ Data Collection:
   In this case, the data will have to be read and converted by calling `excel_to_matrix(fp)`
   where fp is the filepath of the excel file such as "jeremycohen/Fall2020/CS4100/song_data.xlsx"
 
-Cleaning Data:
+**Cleaning Data:**
   Next, depending on how clean the data is, you may want to remove duplicate entries by calling
   `rm_duplicates(song_ratings)` where `song_ratings` is the list of lists of song ratings.
 
@@ -28,7 +28,7 @@ Cleaning Data:
            # threshold: [0-1] percentage of users that must not know a song for it to be removed
   ```
 
-Running:
+**Running:**
   Once the data (song_ratings) is defined (list of lists of [1-5] ratings), we can generate the model's predictions
   for every user-song datapoint (including those songs which have already been rated by that user) by assigning:
   ```
